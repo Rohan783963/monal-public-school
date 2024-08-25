@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monal Public School</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .school-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,6 +76,8 @@
             <h2>About Us</h2>
             <p>Monal Public School is a leading educational institution dedicated to fostering a nurturing and innovative learning environment. Established in 1995, our school has consistently provided quality education and holistic development to students from diverse backgrounds.</p>
             <p>Our mission is to equip students with the skills and knowledge needed to succeed in an ever-changing world while promoting ethical values and a sense of community.</p>
+            <p>Monal Public Sr. Sec. School is a dynamic, progressive, co-educational, English medium, senior secondary school recognized by the Directorate of Education, Himachal Pradesh and affiliated to H.P. Board of School Education, Dharamshala. The school is run by Monal Public School Society (Regd) since 1989 and has classes from Nursery to Twelfth. The streams available at secondary level are Science and Commerce. The school offers an environment where wisdom from the past gels with the present to make students future ready. It follows a well-researched curriculum and monitors the performance of the students on a continuous basis throughout the academic session. The school encourages the students to be mentally agile, physically able, morally upright, intellectually aware, aesthetically appreciative and spiritually enlightened. It ignites the dynamic process of holistic personality development and motivates the students to pursue excellence in their field of interest.</p>
+            <img src="image-url.jpg" alt="Monal Public Sr. Sec. School" class="school-image">
         </section>
 
         <section id="academics" class="section" style="display: none;">
@@ -43,6 +98,13 @@
         <p>&copy; 2024 Monal Public School. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
