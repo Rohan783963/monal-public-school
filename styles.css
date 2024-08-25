@@ -1,15 +1,22 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    background-color: #0044cc;
+    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -18,8 +25,9 @@ header h1 {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -30,32 +38,40 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    cursor: pointer;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
-    margin: 10px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .section {
-    background-color: #fff;
     padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-section h2 {
-    border-bottom: 2px solid #0044cc;
-    padding-bottom: 10px;
+.school-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #0044cc;
+    background: #333;
     color: #fff;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
