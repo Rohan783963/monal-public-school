@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monal Public School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Monal Public School</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#academics" onclick="showSection('academics')">Academics</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Monal Public School is a leading educational institution dedicated to fostering a nurturing and innovative learning environment. Established in 1995, our school has consistently provided quality education and holistic development to students from diverse backgrounds.</p>
+            <p>Our mission is to equip students with the skills and knowledge needed to succeed in an ever-changing world while promoting ethical values and a sense of community.</p>
+        </section>
+
+        <section id="academics" class="section" style="display: none;">
+            <h2>Academics</h2>
+            <p>At Monal Public School, we offer a comprehensive curriculum that includes core subjects such as Mathematics, Science, and Language Arts, as well as a variety of extracurricular activities. Our dedicated faculty members employ innovative teaching methods to ensure that each student reaches their full potential.</p>
+            <p>We are committed to academic excellence and provide a range of resources and support to help our students thrive.</p>
+        </section>
+
+        <section id="contact" class="section" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Address: 123 School Lane, Education City, EC 45678</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@monalpublicschool.edu</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Monal Public School. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
