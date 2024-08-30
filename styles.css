@@ -134,3 +134,8 @@ footer {
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
 }
+img.small-image {
+    width: 20px; /* Set the width to 20 pixels */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: For rounded corners */
+}
