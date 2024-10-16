@@ -5705,4 +5705,24 @@ if ("undefined" == typeof jQuery)
     ,
     b || (a.jQuery = a.$ = r),
     r
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<div class="slider">
+    <div><img src="image1.jpg" alt="Image 1"></div>
+    <div><img src="image2.jpg" alt="Image 2"></div>
+    <div><img src="image3.jpg" alt="Image 3"></div>
+</div>
+<script>
+$(document).ready(function(){
+    $('.slider').slick({
+        // Options
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
+</script>
 });
